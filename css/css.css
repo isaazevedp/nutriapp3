@@ -31,18 +31,7 @@ body {
     margin-bottom: 20px;
 }
 
-.logo-circle {
-    width: 90px;
-    height: 90px;
-    background: linear-gradient(145deg, #0072ff, #00c6ff); /* Gradiente em tons de azul */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
+
 
 .logo-circle:hover {
     transform: rotate(360deg);

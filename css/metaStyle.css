@@ -59,7 +59,7 @@ input[type="number"] {
 
 input[type="date"]:focus {
     border-color: #48955b;
-    box-shadow: 0 0 8px rgba(0, 114, 255, 0.5);
+    
 }
 
 input[type="date"] {
@@ -73,7 +73,7 @@ input[type="date"] {
 
 input[type="number"]:focus {
     border-color: #48955b;
-    box-shadow: 0 0 8px rgba(0, 114, 255, 0.5);
+    
 }
 
 

@@ -19,8 +19,15 @@
                 <label for="data">Data:</label>
                 <input type="date" id="data" name="data" required>
 
-                <label for="escola">Nome da Escola:</label>
-                <input type="text" id="escola" name="escola" placeholder="Nome da Escola" required>
+                <label for="turno">Turno:</label>
+                    <select id="turno" name="turno" required>
+                    <option value="" disabled selected>Informe o turno</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                </select>
+
+                <label for="escola">Turma:</label>
+                <input type="text" id="escola" name="escola" placeholder="Informe a Sala" required>
 
                 <label for="quantidade">Quantidade Desperdiçada (kg):</label>
                 <input type="number" id="quantidade" name="quantidade" step="0.1" placeholder="Quantidade (kg)" required>
@@ -29,13 +36,11 @@
                 <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o desperdício observado..." required></textarea>
 
                 <button type="submit">Salvar Anotação</button>
-                <a href="/calendario.html" class="btn-voltar">Voltar</a>
+                <a href="/html.html" class="btn-voltar">Voltar</a>
             </fieldset>
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Controle de Desperdício de Comida. Todos os direitos reservados.</p>
-    </footer>
+    
 </body>
 </html>

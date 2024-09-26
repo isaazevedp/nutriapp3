@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta de Desperdício</title>
     <link rel="stylesheet" href="/css/metaStyle.css">
+    <style>
+        body {
+            background-image: url('/css/img/imagem\ d\ fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0; /* Remove margens padrão */
+            height: 100vh; /* Garante que o fundo preencha a altura da tela */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Registro do Desperdício</h1>
+            <h1>Meta</h1>
         </header>
 
         <div class="dropdown">
-            <button class="dropbtn" id="dropdownButton">Selecione o Ano</button>
+            
             <div class="dropdown-content" id="dropdownMenu">
                 <a href="#" onclick="selectYear('8º Ano')">8º Ano do Ensino Fundamental</a>
                 <a href="#" onclick="selectYear('9º Ano')">9º Ano do Ensino Fundamental</a>
@@ -42,29 +57,6 @@
         </footer>
     </div>
 
-    <script>
-        function selectYear(year) {
-            document.getElementById('dropdownButton').innerText = year;
-            document.getElementById('dropdownMenu').classList.remove('show');
-        }
-
-        // Fecha o menu se o usuário clicar fora dele
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-
-        // Abre o menu quando o botão é clicado
-        document.getElementById('dropdownButton').onclick = function() {
-            document.getElementById('dropdownMenu').classList.toggle('show');
-        }
-    </script>
+    
 </body>
 </html>
